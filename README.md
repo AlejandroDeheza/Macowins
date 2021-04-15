@@ -116,15 +116,15 @@ class GestorDeVentas{
 
 ## Alternativas
 
-* En ves de usar enum, usar clases para TipoPrenda o EstadoPrenda
+* En ves de usar Enum, usar Clases
 
-  Almenos para TipoPrenda no seria util ya que no hay comportamiento. Y para EstadoPrenda 
+  Almenos para TipoPrenda no seria util ya que no hay comportamiento. En las demas opciones es preferible usar Enum porque asi se limitan los valores que puede tomar el atributo
 
-* cachear el precio de la prenda. tratarla como un atributo
+* Cachear el precio de la prenda. tratarla como un atributo
 
   No es necesario porque el calculo es bastante simple. Habria que revisarlo si la forma de hacer el calculo cambia
 
-* usar bool para ModoDePago en ves de un enum
+* Usar bool para ModoDePago en ves de un Enum
 
   Lo estoy evitando para no usar condicionales que no hacen falta. Ademas permite agregar mas tipos de modo de pago.
 
