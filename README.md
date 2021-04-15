@@ -11,6 +11,7 @@
 
 ## pseudocodigo
 
+~~~
 enum TipoPrenda {
   SACO, PANTALON, CAMISA
 }
@@ -106,6 +107,7 @@ class GestorDeVentas{
     return sumList(ventasDelDia.precioTotal());
   }
 }
+~~~
 
 ## Diagrama de clases
 
