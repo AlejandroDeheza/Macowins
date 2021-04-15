@@ -18,21 +18,21 @@ enum TipoPrenda {
 
 
 enum EstadoPrenda {
-  int coeficiente(int precioBase);
+  int calcularPrecio(int precioBase);
     
   int valorPromocion = 5; //un valor cualquiera en este caso
     
   NUEVA {
       @Override
-      int coeficiente(int precioBase) { return precioBase; }
+      int calcularPrecio(int precioBase) { return precioBase; }
   }, 
   PROMOCION {
       @Override
-      int coeficiente(int precioBase) { return precioBase - valorPromocion; } 
+      int calcularPrecio(int precioBase) { return precioBase - valorPromocion; } 
   },
   LIQUIDACION {
       @Override
-      int coeficiente(int precioBase) { return precioBase * 0.5; }
+      int calcularPrecio(int precioBase) { return precioBase * 0.5; }
   };
 }
 
