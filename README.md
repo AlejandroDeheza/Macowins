@@ -48,7 +48,7 @@ class Prenda{
 
 
   int precio(){
-    return estado.calcularPrecio(precioBase)
+    return estado.calcularPrecio(precioBase);
   }
 }
 
@@ -116,9 +116,15 @@ class GestorDeVentas{
 
 ## Alternativas
 
-* en ves de usar enum, usar clases para cada tipo de prenda o estado
+* En ves de usar enum, usar clases para TipoPrenda o EstadoPrenda
+
+  Almenos para TipoPrenda no seria util ya que no hay comportamiento. Y para EstadoPrenda 
 
 * cachear el precio de la prenda. tratarla como un atributo
 
+  No es necesario porque el calculo es bastante simple. Habria que revisarlo si la forma de hacer el calculo cambia
+
 * usar bool para ModoDePago en ves de un enum
+
+  Lo estoy evitando para no usar condicionales que no hacen falta. Ademas permite agregar mas tipos de modo de pago.
 
