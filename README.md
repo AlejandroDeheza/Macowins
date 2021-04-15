@@ -70,7 +70,6 @@ enum ModoDePago {
       int calcularPrecioTotal(List<Prenda> prendas, int cantidadCuotas) { return sumList(prendas.precio()) + cantidadCuotas * coeficienteTarjeta + sumList(prendas.precio() * 0.01); } 
   };
 }
-// lo planteo como un enum porque pienso que es probable que se agreguen funcionalidades nuevas segun un tipo de tarjeta, igual estoy arriesgandome a estar sobrediseñando..
 
 
 
