@@ -10,7 +10,9 @@
 
 ## Diagrama de clases
 
-
+<p align="center"> 
+<img src="DDS 2021 - Macowins2.png">
+</p>
 
 
 ## Pseudocodigo
